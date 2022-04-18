@@ -54,7 +54,7 @@ public class Steps {
 
 	@Entao("^realizo a validacao do texto Prontinho! Recebemos os seus dados$")
 	public void realizo_a_validacao_do_texto_Prontinho_Recebemos_os_seus_dados() throws Throwable {
-
+		m.validarTexto("Prontinho! Recebemos os seus dados.", e.getValidacao());
 	}
 
 }
