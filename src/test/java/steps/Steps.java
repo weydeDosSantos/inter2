@@ -19,8 +19,8 @@ public class Steps {
 	Elementos e = new Elementos();
 
 	@Dado("^que o usuario acesse a url \"([^\"]*)\"$")
-	public void que_o_usuario_acesse_a_url(String arg1) throws Throwable {
-		m.ExecutarNavegador(arg1);
+	public void que_o_usuario_acesse_a_url(String site) throws Throwable {
+		m.ExecutarNavegador(site);
 	}
 
 	@Dado("^selecione o campo abra a sua conta$")
@@ -48,13 +48,14 @@ public class Steps {
 
 	@Quando("^selecionar o botao continuar$")
 	public void selecionar_o_botao_continuar() throws Throwable {
-		m.pausa(2000);
+		m.pausa(3000);
 		m.clicar(e.getCampoContinuar());
 	}
 
 	@Entao("^realizo a validacao do texto Prontinho! Recebemos os seus dados$")
 	public void realizo_a_validacao_do_texto_Prontinho_Recebemos_os_seus_dados() throws Throwable {
-		m.validarTexto("Prontiiiinho! Recebemos os seus dados.", e.getValidacao());
+	m.pausa(3000);
+	m.validarTexto("sss", e.getValidacaoDeTexto());
 	}
 
 }

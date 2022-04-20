@@ -13,21 +13,12 @@ public class Elementos {
 	private By campoNascimento = By.id("dataNascimento");
 	private By campoTratamentoDados = By.xpath("/html/body/div[3]/div[2]/div/div[2]/form/div/div[6]/div/label");
 	private By campoContinuar = By.xpath("/html/body/div[3]/div[2]/div/div[2]/form/div/div[7]/button");
-	private By validacao = By.xpath("/html/body/div[3]/div[2]/div/p");
-	public By getValidacao() {
-		return validacao;
-	}
-	public void setValidacao(By validacao) {
-		this.validacao = validacao;
-	}
-	public By getBtbAbrirSuaConta() {
-		return btbAbrirSuaConta;
-	}
+	private By validacaoDeTexto = By.xpath("/html/body/div[3]/div[2]/div/p");
 	public By getBtnChato() {
 		return btnChato;
 	}
-	public void setBtnChato(By btnChato) {
-		this.btnChato = btnChato;
+	public By getBtbAbrirSuaConta() {
+		return btbAbrirSuaConta;
 	}
 	public By getCampoNome() {
 		return campoNome;
@@ -50,8 +41,9 @@ public class Elementos {
 	public By getCampoContinuar() {
 		return campoContinuar;
 	}
-	
-	
-	
+	public By getValidacaoDeTexto() {
+		return validacaoDeTexto;
+
+	}
 	
 }

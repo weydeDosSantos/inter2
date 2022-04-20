@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Metodos {
 
-	
 	WebDriver driver;
 
 	public void clicar(By elemento) {
@@ -37,4 +36,5 @@ public class Metodos {
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
-}
+	
+	}
